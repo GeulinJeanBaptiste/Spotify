@@ -19,7 +19,7 @@ const catalogue = [
     album: "Master Of Puppets",
     like: false,
   },
-{
+  {
     tire: "Lonely Day",
     artiste: "System Of A Down",
     genre: "rock",
