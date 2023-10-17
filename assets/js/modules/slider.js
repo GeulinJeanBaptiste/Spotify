@@ -1,4 +1,4 @@
-const slider = (catalogue, currentTrack, status = "init") => {
+const slider = (status = "init") => {
   console.log("initialisation du slider");
   //   console.dir(catalogue);
   //   console.log(catalogue[0].cover);
@@ -28,3 +28,4 @@ const slider = (catalogue, currentTrack, status = "init") => {
   }
 };
 export { slider };
+// UL dans html,

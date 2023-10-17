@@ -29,6 +29,18 @@ const catalogue = [
     album: "Hypnotize",
     like: false,
   },
+  {
+    tire: "Snuff",
+    artiste: "Slipknot",
+    genre: "rock",
+    annee: 2008,
+    cover: "slipknot.jpg",
+    audio: "Slipknot - Snuff (Lyrics in description).mp3",
+    album: "All Hope Is Gone",
+    like: false,
+  },
 ];
 
 export { catalogue };
+
+// console.dir(catalogue);
