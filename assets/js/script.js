@@ -5,6 +5,7 @@ import { audio } from "./modules/audio.js";
 let currentTrack = 0;
 const prevButton = document.querySelector("#prev");
 const nextButton = document.querySelector("#next");
+const playPause = document.querySelector("#play-Pause");
 // Clic sur le boutton next.
 nextButton.addEventListener("click", () => {
   if (currentTrack < catalogue.length - 1) {
@@ -25,5 +26,9 @@ prevButton.addEventListener("click", () => {
 
   console.log(currentTrack);
 });
+// Actions sur le bouton play-pause
+playPause.addEventListener("click", () =>{
+  
+})
 slider(catalogue, currentTrack);
 audio(catalogue, currentTrack);
