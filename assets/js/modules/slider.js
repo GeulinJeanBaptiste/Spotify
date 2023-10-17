@@ -15,25 +15,21 @@ const initSlider = () => {
 const nextSlider = () => {
   document.querySelector("#coversSlider").src =
     coverUrl + catalogue[currentTrack].cover;
-  document.querySelector("#imgA").classList.add("transSlider");
-  document.querySelector("#imgA").classList.add("fadeOut");
+  document.querySelector("#imgA").classList.add("transSlider", "fadeOut");
   setTimeout(() => {
     document.querySelector("#imgA").src =
       coverUrl + catalogue[currentTrack].cover;
-    document.querySelector("#imgA").classList.remove("transSlider");
-    document.querySelector("#imgA").classList.remove("fadeOut");
+    document.querySelector("#imgA").classList.remove("transSlider", "fadeOut");
   }, 500);
 };
 const prevSlider = () => {
   document.querySelector("#coversSlider").src =
     coverUrl + catalogue[currentTrack].cover;
-  document.querySelector("#imgA").classList.add("transSlider");
-  document.querySelector("#imgA").classList.add("fadeOut");
+  document.querySelector("#imgA").classList.add("transSlider", "fadeOut");
   setTimeout(() => {
     document.querySelector("#imgA").src =
       coverUrl + catalogue[currentTrack].cover;
-    document.querySelector("#imgA").classList.remove("transSlider");
-    document.querySelector("#imgA").classList.remove("fadeOut");
+    document.querySelector("#imgA").classList.remove("transSlider", "fadeOut");
   }, 500);
 };
 
