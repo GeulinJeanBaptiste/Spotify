@@ -3,6 +3,7 @@ import { slider } from "./modules/slider.js";
 import { audio } from "./modules/audio.js";
 // console.dir(catalogue);
 let currentTrack = 0;
+let isPlaying = false;
 const prevButton = document.querySelector("#prev");
 const nextButton = document.querySelector("#next");
 const playPause = document.querySelector("#play-Pause");
@@ -27,8 +28,15 @@ prevButton.addEventListener("click", () => {
   console.log(currentTrack);
 });
 // Actions sur le bouton play-pause
-playPause.addEventListener("click", () =>{
-  
-})
+// Il est affiché en Play et devient Pause quand on clique dessus.
+playPause.addEventListener("click", () => {
+  if (isPlaying === true) {
+    playPause.innerText = "Play";
+    isPlaying = false;
+  } else {
+    playPause.innerText = "Pause";
+    isPlaying = true;
+  }
+});
 slider(catalogue, currentTrack);
 audio(catalogue, currentTrack);
