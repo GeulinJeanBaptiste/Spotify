@@ -30,6 +30,7 @@ prevButton.addEventListener("click", () => {
 // Actions sur le bouton play-pause
 // Il est affiché en Play et devient Pause quand on clique dessus.
 playPause.addEventListener("click", () => {
+  //  ! Veut dire inverse d'une boolean ex:!isplaying vaut false.
   if (isPlaying) {
     playPause.innerText = "Play";
     // isPlaying = false;
