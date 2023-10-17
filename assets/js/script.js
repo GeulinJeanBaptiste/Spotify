@@ -30,13 +30,14 @@ prevButton.addEventListener("click", () => {
 // Actions sur le bouton play-pause
 // Il est affiché en Play et devient Pause quand on clique dessus.
 playPause.addEventListener("click", () => {
-  if (isPlaying === true) {
+  if (isPlaying) {
     playPause.innerText = "Play";
-    isPlaying = false;
+    // isPlaying = false;
   } else {
     playPause.innerText = "Pause";
-    isPlaying = true;
+    // isPlaying = true;
   }
+  isPlaying = !isPlaying;
 });
 slider(catalogue, currentTrack);
 audio(catalogue, currentTrack);
