@@ -16,24 +16,24 @@ const nextSlider = () => {
   document.querySelector("#coversSlider").src =
     coverUrl + catalogue[currentTrack].cover;
   document.querySelector("#imgA").classList.add("transSlider");
-  document.querySelector("#imgA").classList.add("slideRight");
+  document.querySelector("#imgA").classList.add("fadeOut");
   setTimeout(() => {
     document.querySelector("#imgA").src =
       coverUrl + catalogue[currentTrack].cover;
     document.querySelector("#imgA").classList.remove("transSlider");
-    document.querySelector("#imgA").classList.remove("slideRight");
+    document.querySelector("#imgA").classList.remove("fadeOut");
   }, 500);
 };
 const prevSlider = () => {
   document.querySelector("#coversSlider").src =
     coverUrl + catalogue[currentTrack].cover;
   document.querySelector("#imgA").classList.add("transSlider");
-  document.querySelector("#imgA").classList.add("slideLeft");
+  document.querySelector("#imgA").classList.add("fadeOut");
   setTimeout(() => {
     document.querySelector("#imgA").src =
       coverUrl + catalogue[currentTrack].cover;
     document.querySelector("#imgA").classList.remove("transSlider");
-    document.querySelector("#imgA").classList.remove("slideLeft");
+    document.querySelector("#imgA").classList.remove("fadeOut");
   }, 500);
 };
 

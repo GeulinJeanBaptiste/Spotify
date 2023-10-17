@@ -22,3 +22,6 @@
 .slideLeft {
   transform: translateX(-100%);
 }
+.fadeOut {
+  opacity: 0;
+}
