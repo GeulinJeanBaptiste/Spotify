@@ -10,8 +10,15 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+#coverSlider {
+}
+.transSlider {
   transition: all 0.5s;
 }
-#coverSlider{
-    
+.slideRight {
+  transform: translateX(+100%);
+}
+.slideLeft {
+  transform: translateX(-100%);
 }
