@@ -6,9 +6,12 @@ globalThis.isPlaying = false;
 const prevButton = document.querySelector("#prev");
 const nextButton = document.querySelector("#next");
 const playPause = document.querySelector("#play-Pause");
+const playlist = document.querySelector("#playlist");
+// const playlist = document.querySelector("#playlist");
 //  globalThis permet de partager une variable ou  une fonction avec tous les modules;
 globalThis.catalogue = catalogue;
 globalThis.track = null;
+globalThis.playlist = playlist;
 // fonction chargée de gérer l'état de mon boutton Play/Pause.
 const statusBPP = () => {
   if (isPlaying) {
@@ -67,7 +70,20 @@ playPause.addEventListener("click", () => {
   }
   statusBPP();
 });
+for (let i = 0; i < catalogue.length; i++) {
+  const titre = catalogue[i];
+  const artiste = catalogue[i].artiste;
+  const album = catalogue[i].album;
+  const liTitre = document.createElement("li");
+  liTitre.appendChild(document.createTextNode(titre.titre));
+  playlist.appendChild(liTitre);
+
+  console.log("\nTitre : " + titre + "\nArtiste : " + artiste + "\nAlbum : " + album);
+};
+
+
 slider();
 audio();
+// playlist();
 
 // console.dir(catalogue);

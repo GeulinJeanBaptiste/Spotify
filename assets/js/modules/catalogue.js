@@ -1,6 +1,6 @@
 const catalogue = [
   {
-    tire: "The Drug In Me Is you",
+    titre: "The Drug In Me Is you",
     artiste: "Falling In Reverse",
     genre: "rock",
     annee: 2011,
@@ -10,7 +10,7 @@ const catalogue = [
     like: false,
   },
   {
-    tire: "Master Of Puppets",
+    titre: "Master Of Puppets",
     artiste: "Metallica",
     genre: "rock",
     annee: 1986,
@@ -20,7 +20,7 @@ const catalogue = [
     like: false,
   },
   {
-    tire: "Lonely Day",
+    titre: "Lonely Day",
     artiste: "System Of A Down",
     genre: "rock",
     annee: 2011,
@@ -30,7 +30,7 @@ const catalogue = [
     like: false,
   },
   {
-    tire: "Snuff",
+    titre: "Snuff",
     artiste: "Slipknot",
     genre: "rock",
     annee: 2008,
@@ -42,5 +42,6 @@ const catalogue = [
 ];
 
 export { catalogue };
+
 
 // console.dir(catalogue);
