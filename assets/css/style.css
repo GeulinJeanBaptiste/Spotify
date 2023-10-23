@@ -1,0 +1,29 @@
+#navigation {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  border-radius: 10px;
+  border: black;
+}
+.itemImg {
+  display: flex;
+  width: 50px;
+}
+/* .item {
+  display: flex;
+  justify-content: space-between;
+} */
+.fa-heart{
+    color: red;
+}
+#time{
+    border: .01rem black solid;
+    height: 1.5rem;
+
+}
+#subTime{
+    width: 0;
+    height: 1.5rem;
+    background-color: blue;
+}

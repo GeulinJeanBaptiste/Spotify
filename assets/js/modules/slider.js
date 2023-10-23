@@ -1,4 +1,3 @@
-const sliderHTML = document.querySelector("#slider");
 const coverUrl = "./assets/img/covers/";
 const initSlider = () => {
   // Je cree une première image d'arrière plan fixe.

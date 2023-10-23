@@ -39,9 +39,38 @@ const catalogue = [
     album: "All Hope Is Gone",
     like: false,
   },
+  {
+    titre: "Short Change Hero",
+    artiste: "The Heavy",
+    genre: "rock",
+    annee: 2009,
+    cover: "The heavy.jpg",
+    audio: "Short Change Hero.mp3",
+    album: "The House That Dirt Built",
+    like: false,
+  },
+  {
+    titre: "Old Number Seven",
+    artiste: "The Devil Makes Three",
+    genre: "rock",
+    annee: 2007,
+    cover: "old number seven.jpg",
+    audio: "The Devil Makes Three - Old Number 7.mp3",
+    album: "The House That Dirt Built",
+    like: false,
+  },
+  {
+    titre: "Hurt",
+    artiste: "Johnny Cash",
+    genre: "rock",
+    annee: 2007,
+    cover: "Hurt.jpg",
+    audio: "Johnny Cash - Hurt.mp3",
+    album: "The Legend Of Johnny Cash",
+    like: false,
+  },
 ];
 
 export { catalogue };
-
 
 // console.dir(catalogue);
